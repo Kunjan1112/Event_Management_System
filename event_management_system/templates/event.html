@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Event Management System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Event Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'events' %}" class="btn">Events</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>All Upcoming Events</h2>
+            <p>Explore all events and book tickets easily. Stay updated!</p>
+        </div>
+    </section>
+
+    <!-- Events List -->
+    <section class="events">
+        <div class="container">
+            <h2 class="section-title">Event List</h2>
+            <div class="event-cards">
+                <!-- Example Event 1 -->
+                <div class="event-card">
+                    <img src="https://source.unsplash.com/400x250/?conference" alt="Tech Conference">
+                    <h3>Tech Conference 2026</h3>
+                    <p>Date: 25th March 2026</p>
+                    <p>Location: Silicon Valley, USA</p>
+                    <p>Join industry experts and explore the future of technology.</p>
+                </div>
+
+                <!-- Example Event 2 -->
+                <div class="event-card">
+                    <img src="https://source.unsplash.com/400x250/?music" alt="Music Festival">
+                    <h3>Music Festival</h3>
+                    <p>Date: 10th April 2026</p>
+                    <p>Location: London, UK</p>
+                    <p>Experience the best live music performances from top artists.</p>
+                </div>
+
+                <!-- Example Event 3 -->
+                <div class="event-card">
+                    <img src="https://source.unsplash.com/400x250/?art" alt="Art Exhibition">
+                    <h3>Art Exhibition</h3>
+                    <p>Date: 5th May 2026</p>
+                    <p>Location: Paris, France</p>
+                    <p>Discover amazing artworks and meet the artists behind them.</p>
+                </div>
+
+                <!-- Add more events here as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Event Management System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
