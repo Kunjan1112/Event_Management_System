@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def name_view(request):
     return HttpResponse("Admin App: Hello World!")
+
+def index_view(request):
+    return render(request, 'admin_app/index.html')
