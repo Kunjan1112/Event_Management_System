@@ -10,5 +10,7 @@ urlpatterns = [
     path('index/', views.index_view, name='index_name'),
 
     path('event_view/', views.event_view, name='event_name'),
+
+    path('about_view/', views.about_view, name='about_name'),
     
 ]

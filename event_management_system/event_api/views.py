@@ -11,3 +11,6 @@ def index_view(request):
 
 def event_view(request):
     return render(request, 'event.html')
+
+def about_view(request):
+    return render(request, 'about.html')
