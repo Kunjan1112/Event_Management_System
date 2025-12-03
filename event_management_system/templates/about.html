@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Event Management System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Event Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'events' %}">Events</a></li>
+                    <li><a href="{% url 'about' %}" class="btn">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>About Us</h2>
+            <p>Learn more about our mission, vision, and how we help you manage and discover amazing events.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <p style="max-width: 800px; margin: 20px auto; text-align: center; font-size: 18px;">
+                Event Management System is dedicated to helping individuals and organizations plan, manage, and enjoy events effortlessly.
+                From tech conferences and music festivals to art exhibitions and workshops, we provide a platform where users can discover upcoming events, book tickets, and connect with like-minded people.
+                Our mission is to make event planning simple, efficient, and enjoyable for everyone.
+            </p>
+
+            <h2 class="section-title">Our Vision & Mission</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>To become the most trusted platform for discovering and managing events worldwide.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>To provide an easy-to-use platform for event organizers and attendees, enabling seamless planning and participation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Event Management System. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
