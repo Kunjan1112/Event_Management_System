@@ -10,5 +10,7 @@ urlpatterns = [
     path('index_view/', views.index_view, name='index_view'),
 
     path('event_view/', views.event_view, name='event_view'),
+
+    path('user_view/', views.user_view, name='user_view'),
     
 ]

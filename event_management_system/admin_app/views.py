@@ -11,3 +11,6 @@ def index_view(request):
 
 def event_view(request):
     return render(request, 'admin_app/event.html')
+
+def user_view(request):
+    return render(request, 'admin_app/user.html')

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Events - Admin Dashboard</title>
+    <title>Manage Users - Admin Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/admin_app/style.css' %}">
+    <link rel="stylesheet" href="admin-style.css">
 </head>
 <body>
     <div class="dashboard">
+
         <!-- Sidebar -->
         <aside class="sidebar">
             <h2 class="logo">EMS Admin</h2>
             <nav>
                 <ul>
                     <li><a href="admin.html">Dashboard</a></li>
-                    <li><a href="#" class="active">Events</a></li>
-                    <li><a href="#">Users</a></li>
+                    <li><a href="admin_events.html">Events</a></li>
+                    <li><a href="#" class="active">Users</a></li>
                     <li><a href="#">Bookings</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Logout</a></li>
@@ -27,66 +27,82 @@
 
         <!-- Main Content -->
         <main class="main-content">
+
+            <!-- Header -->
             <header class="main-header">
-                <h1>Manage Events</h1>
+                <h1>Manage Users</h1>
                 <div class="user-info">
                     <span>Admin</span>
-                    <img src="https://source.unsplash.com/40x40/?face" alt="Admin Profile">
+                    <img src="https://source.unsplash.com/40x40/?profile" alt="Admin Profile">
                 </div>
             </header>
 
-            <!-- Add New Event Button -->
+            <!-- Add User Button -->
             <div style="margin-bottom: 20px;">
-                <button class="btn btn-primary" style="padding:10px 20px; border-radius:5px; background-color:#ff7f50; border:none; color:white;">+ Add New Event</button>
+                <button class="btn btn-primary" style="padding:10px 20px; border-radius:5px; background-color:#ff7f50; border:none; color:white;">
+                    + Add New User
+                </button>
             </div>
 
-            <!-- Events Table -->
+            <!-- Users Table -->
             <section class="tables">
                 <table>
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Event Name</th>
-                            <th>Date</th>
-                            <th>Location</th>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
                             <th>Status</th>
+                            <th>Joined Date</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Tech Conference 2026</td>
-                            <td>25 Mar 2026</td>
-                            <td>Silicon Valley, USA</td>
-                            <td>Active</td>
+                            <td><img src="https://source.unsplash.com/35x35/?man" style="border-radius:50%;"></td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>User</td>
+                            <td style="color:green; font-weight:600;">Active</td>
+                            <td>15 Jan 2026</td>
                             <td>
                                 <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
                                 <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
                             </td>
                         </tr>
+
                         <tr>
                             <td>2</td>
-                            <td>Music Festival</td>
-                            <td>10 Apr 2026</td>
-                            <td>London, UK</td>
-                            <td>Active</td>
+                            <td><img src="https://source.unsplash.com/35x35/?woman" style="border-radius:50%;"></td>
+                            <td>Sarah Parker</td>
+                            <td>sarah@example.com</td>
+                            <td>Organizer</td>
+                            <td style="color:red; font-weight:600;">Inactive</td>
+                            <td>22 Feb 2026</td>
                             <td>
                                 <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
                                 <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
                             </td>
                         </tr>
+
                         <tr>
                             <td>3</td>
-                            <td>Art Exhibition</td>
-                            <td>5 May 2026</td>
-                            <td>Paris, France</td>
-                            <td>Inactive</td>
+                            <td><img src="https://source.unsplash.com/35x35/?face" style="border-radius:50%;"></td>
+                            <td>Michael Smith</td>
+                            <td>michael@example.com</td>
+                            <td>Admin</td>
+                            <td style="color:green; font-weight:600;">Active</td>
+                            <td>10 Mar 2026</td>
                             <td>
                                 <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
                                 <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
             </section>
