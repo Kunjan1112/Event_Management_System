@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events - Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'admin_app/style.css' %}">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">EMS Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="#" class="active">Events</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Bookings</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Manage Events</h1>
+                <div class="user-info">
+                    <span>Admin</span>
+                    <img src="https://source.unsplash.com/40x40/?face" alt="Admin Profile">
+                </div>
+            </header>
+
+            <!-- Add New Event Button -->
+            <div style="margin-bottom: 20px;">
+                <button class="btn btn-primary" style="padding:10px 20px; border-radius:5px; background-color:#ff7f50; border:none; color:white;">+ Add New Event</button>
+            </div>
+
+            <!-- Events Table -->
+            <section class="tables">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tech Conference 2026</td>
+                            <td>25 Mar 2026</td>
+                            <td>Silicon Valley, USA</td>
+                            <td>Active</td>
+                            <td>
+                                <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Music Festival</td>
+                            <td>10 Apr 2026</td>
+                            <td>London, UK</td>
+                            <td>Active</td>
+                            <td>
+                                <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Art Exhibition</td>
+                            <td>5 May 2026</td>
+                            <td>Paris, France</td>
+                            <td>Inactive</td>
+                            <td>
+                                <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
