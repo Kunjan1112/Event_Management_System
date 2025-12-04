@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Bookings - Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/admin_app/style.css' %}">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">EMS Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="admin_events.html">Events</a></li>
+                    <li><a href="user.html">Users</a></li>
+                    <li><a href="#" class="active">Bookings</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Section -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="main-header">
+                <h1>Manage Bookings</h1>
+                <div class="user-info">
+                    <span>Admin</span>
+                    <img src="https://source.unsplash.com/40x40/?admin" alt="Admin Profile">
+                </div>
+            </header>
+
+            <!-- Add Booking Button -->
+            <div style="margin-bottom: 20px;">
+                <button class="btn btn-primary" style="padding:10px 20px; border-radius:5px; background-color:#ff7f50; border:none; color:white;">
+                    + Add New Booking
+                </button>
+            </div>
+
+            <!-- Booking Table -->
+            <section class="tables">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Client Name</th>
+                            <th>Event Type</th>
+                            <th>Guests</th>
+                            <th>Event Date</th>
+                            <th>Status</th>
+                            <th>Total Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>John Carter</td>
+                            <td>Wedding</td>
+                            <td>200</td>
+                            <td>10 Jan 2026</td>
+                            <td style="color:orange; font-weight:600;">Pending</td>
+                            <td>₹75,000</td>
+                            <td>
+                                <button style="background-color:#4CAF50;color:white;padding:5px 10px;border:none;border-radius:3px;">Confirm</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Priya Shah</td>
+                            <td>Corporate Meeting</td>
+                            <td>80</td>
+                            <td>21 Feb 2026</td>
+                            <td style="color:green; font-weight:600;">Confirmed</td>
+                            <td>₹45,000</td>
+                            <td>
+                                <button style="background-color:#FFC107;color:black;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Ravi Patel</td>
+                            <td>Birthday Party</td>
+                            <td>50</td>
+                            <td>05 Mar 2026</td>
+                            <td style="color:red; font-weight:600;">Cancelled</td>
+                            <td>₹18,000</td>
+                            <td>
+                                <button style="background-color:#FFC107;color:black;padding:5px 10px;border:none;border-radius:3px;">Edit</button>
+                                <button style="background-color:#f44336;color:white;padding:5px 10px;border:none;border-radius:3px;">Delete</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

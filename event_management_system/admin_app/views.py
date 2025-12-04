@@ -14,3 +14,6 @@ def event_view(request):
 
 def user_view(request):
     return render(request, 'admin_app/user.html')
+
+def booking_view(request):
+    return render(request, 'admin_app/booking.html')    
