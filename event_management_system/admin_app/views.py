@@ -17,3 +17,6 @@ def user_view(request):
 
 def booking_view(request):
     return render(request, 'admin_app/booking.html')    
+
+def settings_view(request):
+    return render(request, 'admin_app/settings.html')

@@ -14,5 +14,7 @@ urlpatterns = [
     path('user_view/', views.user_view, name='user_view'),
 
     path('booking_view/', views.booking_view, name='booking_view'),
+
+    path('settings_view/', views.settings_view, name='settings_view'),
     
 ]

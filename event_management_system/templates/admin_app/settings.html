@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings - Event Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/admin_app/style.css' %}">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">EMS Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="admin_events.html">Events</a></li>
+                    <li><a href="user.html">Users</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="#" class="active">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="main-header">
+                <h1>Admin Settings</h1>
+                <div class="user-info">
+                    <span>Admin</span>
+                    <img src="https://source.unsplash.com/40x40/?profile" alt="Admin">
+                </div>
+            </header>
+
+            <!-- Settings Sections -->
+            <section class="settings-section">
+
+                <!-- Profile Settings -->
+                <div class="settings-card">
+                    <h2>Profile Information</h2>
+                    <form>
+                        <label>Admin Name</label>
+                        <input type="text" placeholder="Enter name" value="Admin">
+
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter email" value="admin@example.com">
+
+                        <label>Phone</label>
+                        <input type="text" placeholder="Enter phone number" value="+91 9876543210">
+
+                        <label>Profile Image</label>
+                        <input type="file">
+
+                        <button class="btn-primary">Save Changes</button>
+                    </form>
+                </div>
+
+                <!-- Password Settings -->
+                <div class="settings-card">
+                    <h2>Security Settings</h2>
+                    <form>
+                        <label>Current Password</label>
+                        <input type="password" placeholder="Enter current password">
+
+                        <label>New Password</label>
+                        <input type="password" placeholder="Enter new password">
+
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Re-enter password">
+
+                        <button style="background:#ff7f50; border:none; color:white; padding:10px 15px; border-radius:5px;">
+                            Update Password
+                        </button>
+                    </form>
+                </div>
+
+                <!-- System Preferences -->
+                <div class="settings-card">
+                    <h2>System Preferences</h2>
+
+                    <div class="toggle-setting">
+                        <label>Dark Mode</label>
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="toggle-setting">
+                        <label>Email Notifications</label>
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="toggle-setting">
+                        <label>Allow Event Auto-Approval</label>
+                        <input type="checkbox">
+                    </div>
+
+                    <button class="btn-primary">Save Preferences</button>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
