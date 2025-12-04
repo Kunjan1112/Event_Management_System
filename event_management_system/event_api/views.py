@@ -7,13 +7,13 @@ def name(request):
     return HttpResponse("Hello World!")
 
 def index_view(request):
-    return render(request, 'index.html')
+    return render(request, 'user_app/index.html')
 
 def event_view(request):
-    return render(request, 'event.html')
+    return render(request, 'user_app/event.html')
 
 def about_view(request):
-    return render(request, 'about.html')
+    return render(request, 'user_app/about.html')
 
 def contact_view(request):
-    return render(request, 'contact.html')
+    return render(request, 'user_app/contact.html')
