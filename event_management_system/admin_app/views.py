@@ -8,3 +8,6 @@ def name_view(request):
 
 def index_view(request):
     return render(request, 'admin_app/index.html')
+
+def event_view(request):
+    return render(request, 'admin_app/event.html')
