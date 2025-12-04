@@ -7,12 +7,12 @@ urlpatterns = [
 
     path('name/', views.name),
 
-    path('index_view/', views.index_view, name='index_name'),
+    path('index/', views.index, name='index'),
 
-    path('event_view/', views.event_view, name='event_name'),
+    path('event/', views.event, name='event'),
 
-    path('about_view/', views.about_view, name='about_name'),
+    path('about/', views.about, name='about'), 
 
-    path('contact_view/', views.contact_view, name='contact_name'),
+    path('contact/', views.contact, name='contact'),
     
 ]

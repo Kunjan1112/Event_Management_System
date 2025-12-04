@@ -6,14 +6,14 @@ from django.http import HttpResponse
 def name(request):
     return HttpResponse("Hello World!")
 
-def index_view(request):
+def index(request):
     return render(request, 'user_app/index.html')
 
-def event_view(request):
+def event(request):
     return render(request, 'user_app/event.html')
 
-def about_view(request):
+def about(request):
     return render(request, 'user_app/about.html')
 
-def contact_view(request):
+def contact(request):
     return render(request, 'user_app/contact.html')
